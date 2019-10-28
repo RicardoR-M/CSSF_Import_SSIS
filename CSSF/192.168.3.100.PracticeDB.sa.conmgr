@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="192.168.3.100.PracticeDB.sa"
+  DTS:DTSID="{B28CF92B-7F3A-4736-A76F-17B18FB423F1}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=192.168.3.100;User ID=sa;Initial Catalog=PracticeDB;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPFCHdjDp4kCvkO6drK4x/gAAAAACAAAAAAAQZgAAAAEAACAAAABdxJwr98MvOl+a2eeal+9A/9Yp1aB/JHoTVRyWLN9YtwAAAAAOgAAAAAIAACAAAAArOXnjjYR2gr0RiXn/F3h7GRpagHCxwdR12PdYXrYq3YAAAADUuSrBMZW3jC5073kqmP2EFOlaGDRHgnJg6htLLGSIYneYypJX4U/4XmIWAfD3KTKh2XPAluqqb1i4HRRTOKqi4Nqf/N+vYv0Uu9E5kNOQIBh9XPNaG49AU8RyZiNp1Kmb+nWL9A8REQ/i9DkvnvCS3NM3lywtuKMDl6Vcc2+JakAAAACNl4ptODAblFr94hK/peKUFx4bWrXASIArWO6vq6kvV+pJBV8nh8dQQtqEmrID0DyYn/w7o1rK9COXPe9pyJAr</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
