@@ -26,18 +26,18 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">EDEN</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPFCHdjDp4kCvkO6drK4x/gAAAAACAAAAAAAQZgAAAAEAACAAAADEZyMzJsmpVipb3judnVZSZwfT6Li9Isf7s10SqoqoZgAAAAAOgAAAAAIAACAAAACbvlU6DIGh0jCdlhHidOzId4AkIT0Tmtr+of+/PT1pOpAAAACwXHQ8s+Q0iLPFY5pJih20TajWtZDHg8S24DXLhqGVN6MwcbbddjBkKsjV6E/v7Rl8NWWwuhr7WX5TGWojgJfnCv0i6jpnu2NTpDGkptXA10dGxl7EkmO1ziBjlL/kdFuhFPQZxsIrxO8CRKPnauwMOjTV0FJQbBgxrwL4F2S6K+wXYZNIe0VjJDYyq+twIdxAAAAAEPeU6T5SOj/g9w7ceRjN4xNvqcpfd6anNxrNh/LWR2gDLYlHfkP5i/wtqBjVM3YaS29xvB+qDLKIBEViMK0Dkg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAbmOdwHLMaU2hEKMkHDUW6QAAAAACAAAAAAADZgAAwAAAABAAAADWg7ZcivOi5bP7YhtPs9bEAAAAAASAAACgAAAAEAAAAOwCRXD3NCj12iM1VOSFvqCIAAAAyQsAg2wUZe+dqwFZSZ04mmO+q1tF8Ei1Vj3iBZQeDdAL7/sncFenwbwMXrgIL1j97lqoHAlYuwO5KOXJvOxqmYFnsEswHDrEgYMUO62xzrRAyzdkRyyo+mPraodyni1zjruiqDqCRZrRnu4FZj4cg3sFMhfS09mg5nlGapaylUPjawfwLiNCzBQAAABMmOPbzg02dL8vFupE/kVJFSz7iQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
           <SSIS:Package SSIS:Name="Package.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
-          <SSIS:ConnectionManager SSIS:Name="192.168.3.100.PracticeDB.sa.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="BASE_CSSF.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
-            <SSIS:Parameter SSIS:Name="CM.192.168.3.100.PracticeDB.sa.ConnectByProxy">
+            <SSIS:Parameter SSIS:Name="CM.BASE_CSSF.ConnectByProxy">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -52,7 +52,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.192.168.3.100.PracticeDB.sa.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.BASE_CSSF.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -63,11 +63,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">Data Source=192.168.3.100;User ID=sa;Initial Catalog=PracticeDB;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">Data Source=10.197.91.1;Initial Catalog=CLARO_CSSF;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.192.168.3.100.PracticeDB.sa.ConnectUsingManagedIdentity">
+            <SSIS:Parameter SSIS:Name="CM.BASE_CSSF.ConnectUsingManagedIdentity">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -82,7 +82,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.192.168.3.100.PracticeDB.sa.InitialCatalog">
+            <SSIS:Parameter SSIS:Name="CM.BASE_CSSF.InitialCatalog">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -93,11 +93,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">PracticeDB</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">CLARO_CSSF</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.192.168.3.100.PracticeDB.sa.Password">
+            <SSIS:Parameter SSIS:Name="CM.BASE_CSSF.Password">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -111,7 +111,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.192.168.3.100.PracticeDB.sa.RetainSameConnection">
+            <SSIS:Parameter SSIS:Name="CM.BASE_CSSF.RetainSameConnection">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -126,7 +126,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.192.168.3.100.PracticeDB.sa.ServerName">
+            <SSIS:Parameter SSIS:Name="CM.BASE_CSSF.ServerName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -137,11 +137,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">192.168.3.100</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">10.197.91.1</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.192.168.3.100.PracticeDB.sa.UserName">
+            <SSIS:Parameter SSIS:Name="CM.BASE_CSSF.UserName">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -152,7 +152,6 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">sa</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
@@ -164,10 +163,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">32</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">37</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{26254229-CA3C-4533-AC1D-85DB20CC07D0}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{4BFB8BB5-256B-4506-8D79-6288BBB73CB9}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -277,7 +276,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Bases.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.exportado.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -288,7 +287,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\SSIS\Bases</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\01.Reportes Analista Calidad\98.REPORTES\Bases\CSSF_Simon\exportado</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
@@ -498,7 +497,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.Result.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.working.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -509,7 +508,7 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">D:\SSIS\Result</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">C:\01.Reportes Analista Calidad\98.REPORTES\Bases\CSSF_Simon\working</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
